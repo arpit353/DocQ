@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+	  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="assets/css/docdetails.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+	<body>
+	<style type="text/css">
+
+	</style>
+	<nav class="doc-container deep-purple">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">DocQ</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Arpit Khurana</a></li>
+        <li><a class="waves-effect waves-light modal-trigger" href="#modal2">Logout</a></li>
+      </ul>
+    </div>
+	</nav>
+<div class="avl-container">
+  	<div class="tagline">
+  	  <h4>Welcome to <span>DocQ</span></h4>
+  	  <h3>Join our large family of Doctors.</h3>
+  	</div>
+  </div>
+<!--Page 1-->
+  <form method="POST" action="" onsubmit="" enctype="multipart/form-data">
+  <div class="row avl-container">
+  <div class="form-border col s12 m10 l9">
+    <h4>Personal Details</h4>
+    <div class="header-underline"></div>
+      <div class="row">
+        <div class="input-field col s12 m6 l6">
+          <p>First Name</p>
+          <input id="name" name="first_name" type="text" class="validate" placeholder="Dr. Ravi" validate="name" required>
+        </div>
+		<div class="input-field col s12 m6 l6">
+          <p>Last Name</p>
+          <input id="lname" name="last_name" type="text" placeholder="Sharma" class="validate" validate="name" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 l6">
+          <p>E-mail</p>
+          <input id="email" name="email" type="email" placeholder="abc@example.com" class="validate" validate="email" required>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <p>Liscense Registration Number</p>
+          <input id="num2" name="liscense" type="number" placeholder="Enter License number" class="validate">
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <p>About yourself</p>
+            <textarea id="textarea1" name="bio" placeholder="Write a bio that will be displayed on your profile.." class="materialize-textarea"></textarea>
+          </div>
+      </div>
+      <div class="file-field input-field">
+        <p>Upload Profile Picture</p>
+        <div class="btn deep-purple">
+          <span class="">Image</span>
+          <input type="file">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l12">
+          <p>Experience</p>
+            <input id="profession" name="experience1" type="text" class="validate" placeholder="eg: 10 years" validate="alpha">
+            <input id="profession" name="experience2" type="text" class="validate" placeholder="eg: 10 years" validate="alpha">
+            <input id="profession" name="experience3" type="text" class="validate" placeholder="eg: 10 years" validate="alpha">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 l6">
+        	<p>Degree and University</p>
+          <input name="university1" type="text" placeholder="University name" class="validate" required>
+          <input name="university2" type="text" placeholder="University name" class="validate" required>
+          <input name="university3" type="text" placeholder="University name" class="validate" required>
+        </div>
+        <div class="input-field col s12 m6 l6">
+        	<p>Year Passed Out</p>
+          <input name="year_passout1" type="text" placeholder="Enter year" class="validate" required>
+          <input name="year_passout2" type="text" placeholder="Enter year" class="validate" required>
+          <input name="year_passout3" type="text" placeholder="Enter year" class="validate" required>
+        </div>        
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 l6">
+          <p>Specializations</p>
+          <input name="specialization1" type="text" placeholder="Enter specialization" class="validate" required>
+          <input name="specialization2" type="text" placeholder="Enter specialization" class="validate" required>
+          <input name="specialization3" type="text" placeholder="Enter specialization" class="validate" required>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <p>Awards and Recognitions</p>
+          <input name="award1" type="text" placeholder="Enter your achievement here" class="validate" required>
+          <input name="award2" type="text" placeholder="Enter your achievement here" class="validate" required>
+          <input name="award3" type="text" placeholder="Enter your achievement here" class="validate" required>
+        </div>        
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6 l6">
+          <p>Clinic's Phone Number</p>
+          <input id="num1" name="clinic_mobile" type="number" placeholder="Mobile number" class="validate" required>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <p>Clinic's Address</p>
+          <input id="num1" name="clinic_address" type="text" placeholder="Clinic Address" class="validate" validate="phone" required>
+        </div>
+        <!-- <div class="col s12">  
+          <p>Current Address</p>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <input id="city" name="city" type="text" placeholder="City" class="validate" validate="state_city" required>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <input id="state" name="country" type="text" placeholder="State" class="validate" validate="state_city" required>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col s12">  
+          <p>On going Research work</p>
+        </div>
+        <div class="input-field col s12 m12 l12">
+          <input  name="research_title" type="text" placeholder="Title" class="validate" required>
+        </div>
+        <div class="input-field col s12 m12 l12">
+          <textarea  name="abstract" type="text" placeholder="Abstract" class="materialize-textarea" required></textarea>
+        </div>
+      </div>
+  </div>
+  </div>
+  <div class="button-message"></div>
+  	<button type="submit" class="button-center deep-purple" id="bt">SUBMIT<i class="material-icons right sub-icon">send</i></button>  
+  </form>
+    <footer class="page-footer deep-purple">
+      <div class="doc-container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">DocQ</h5>
+            <p class="grey-text text-lighten-4">A place for doctors to come together.</p>
+			<i class="fa fa-facebook-official" aria-hidden="true"></i>
+			<i class="fa fa-twitter-square" aria-hidden="true"></i>
+			<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Address</h5>
+            <p>Offices at VIT Univesity</p>
+          </div>
+        </div>
+      </div>
+	  <div class="footer-copyright">
+        <div class="doc-container">
+        © 2017 All rights reserved
+        </div>
+      </div>
+    </footer>
+        
+      <!--Import jQuery before materialize.js-->
+      <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.js"></script>
+
+	  <script>
+	  $(document).ready(function(){
+		// the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+		$('.modal').modal({
+     		endingTop: '5%', // Ending top style attribute
+		});
+	  });
+	  </script>
+</body>
+  </html>
+  </html>
